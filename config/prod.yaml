@@ -1,0 +1,6 @@
+env: "prod"
+storage_path: "/root/apps/storage/sso.db"
+grpc:
+  port: 44044
+  timeout: 5s
+migrations_path: "./migrations"

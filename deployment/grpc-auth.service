@@ -1,0 +1,15 @@
+[Unit]
+Description=gRPC Auth
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/apps/grpc-auth
+ExecStart=/root/apps/grpc-auth/grpc-auth
+Restart=always
+RestartSec=4
+StandardOutput=inherit
+EnvironmentFile=/root/apps/grpc-auth/config.env
+
+[Install]
+WantedBy=multi-user.target
